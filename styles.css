@@ -142,7 +142,7 @@ body {
 
 /* Trending Events Section */
 .trending-events .container {
-   max-width: 1350px;
+   max-width: 1350   px;
    margin: 2rem auto;
    padding: 0 1rem;
 }
