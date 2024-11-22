@@ -25,7 +25,7 @@ body {
    top: 0;
    left: 0;
    right: 0;
-   padding: 0.5rem 0;
+   padding: 0.5rem 1rem;
    width: 90%;
    margin: 0 auto;
    z-index: 1000;
@@ -74,7 +74,7 @@ body {
 }
 
 .navbar .auth-links .login {
-   color: puple;
+   color: purple;
 }
 
 .navbar .auth-links .signup {
@@ -142,7 +142,7 @@ body {
 
 /* Trending Events Section */
 .trending-events .container {
-   max-width: 1350   px;
+   max-width: 1350px;
    margin: 2rem auto;
    padding: 0 1rem;
 }
