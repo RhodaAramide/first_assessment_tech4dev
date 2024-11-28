@@ -1,1 +1,1 @@
-import "./product.js";
+import "./elementManipulation.js";

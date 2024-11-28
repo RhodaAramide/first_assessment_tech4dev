@@ -1,5 +1,5 @@
-class ProductService {
-  async #fetchData(endpoint, method = "GET", body) {
+export class ProductService {
+  async #fetchData(endpoint = "", method = "GET", body) {
     const fetchOptions = {
       method,
       headers: {
@@ -8,14 +8,14 @@ class ProductService {
       body: body ? JSON.stringify(body) : null,
     };
     const response = await fetch(
-      `${"https://fakestoreapi.com/products"}/${endpoint}`,
+      `https://fakestoreapi.com/products/${endpoint}`,
       fetchOptions
     );
     return await response.json();
   }
 
   getProducts() {
-    return this.#fetchData("");
+    return this.#fetchData();
   }
 
   getProductById(id) {
@@ -27,7 +27,7 @@ class ProductService {
   }
 }
 
-class Product {
+export class Product {
   constructor({ id, title, price, description, category, image, rating }) {
     this.id = id;
     this.title = title;
@@ -41,8 +41,8 @@ class Product {
 
 const productService = new ProductService();
 
-productService.getProductById(5).then((product) => console.log(product));
 productService.getProducts().then((products) => console.log(products));
+productService.getProductById(5).then((product) => console.log(product));
 
 const product = new Product({
   id: 1,
