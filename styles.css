@@ -84,13 +84,13 @@ body {
 
 /* Hero Section */
 .hero {
-   background-image: url('images/hero-img.jpg');
-   background-size: cover;
+   background-image: url('images/hero.jpg');
+   background-size: contain;
    background-position: center;
    padding: 4rem 1rem;
    text-align: center;
    color: #fff;
-   height: 60vh;
+   height: 65vh;
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
