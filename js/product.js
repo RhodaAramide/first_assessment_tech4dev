@@ -42,7 +42,7 @@ export class Product {
 const productService = new ProductService();
 
 productService.getProducts().then((products) => console.log(products));
-productService.getProductById(5).then((product) => console.log(product));
+productService.getProductById().then((product) => console.log(product));
 
 const product = new Product({
   id: 1,

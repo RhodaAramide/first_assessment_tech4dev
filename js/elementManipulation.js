@@ -29,9 +29,14 @@ const createEventCard = (product) => {
 
   // Create the view details link
   const viewDetailsLink = document.createElement("a");
-  viewDetailsLink.href = "#";
+  viewDetailsLink.href = "/index.html?productId=" + product.id;
   viewDetailsLink.className = "view-details";
   viewDetailsLink.textContent = "View details";
+  viewDetailsLink.dataset.productId = product.id;
+  viewDetailsLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.location.href = "/productDetails.html?productId=" + product.id;
+  });
 
   // Append elements to the event details div
   eventDetails.appendChild(eventTitle);
