@@ -33,6 +33,7 @@ const createEventCard = (product) => {
   viewDetailsLink.className = "view-details";
   viewDetailsLink.textContent = "View details";
   viewDetailsLink.dataset.productId = product.id;
+  // Add an event listener to the view details link
   viewDetailsLink.addEventListener("click", (event) => {
     event.preventDefault();
     window.location.href = "/productDetails.html?productId=" + product.id;
@@ -55,6 +56,7 @@ const createEventCard = (product) => {
 
 const productService = new ProductService();
 
+// Display the products
 const displayProducts = (products) => {
   products.forEach((product) => {
     createEventCard(product);

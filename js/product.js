@@ -41,8 +41,8 @@ export class Product {
 
 const productService = new ProductService();
 
-productService.getProducts().then((products) => console.log(products));
-productService.getProductById().then((product) => console.log(product));
+// productService.getProducts().then((products) => console.log(products));
+// productService.getProductById(4).then((product) => console.log(product));
 
 const product = new Product({
   id: 1,
@@ -58,4 +58,4 @@ const product = new Product({
   },
 });
 
-console.log(product);
+// console.log(product);
