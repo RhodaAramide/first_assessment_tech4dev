@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rendezvous</title>
+   <link href="./output.css" rel="stylesheet">
+   <script src='./js/index.js' type='module'></script>
+</head>
+
+<body>
+   <div class="">
+      <div class=" h-screen bg-cover bg-center" style="background-image: url('./images/heroImg.png');">
+         <!-- Navbar -->
+         <nav class="">
+            <div
+               class="container mx-auto flex justify-between items-center bg-[#FFFFFF99] py-3 px-6 text-[#432361] rounded-[20px]">
+               <div class="text-[32px] leading-[37.5px] font-bold">rendezvous</div>
+               <ul class="flex gap-6 font-bold text-[16px]">
+                  <li><a href="#" class="hover:text-[#783EAD]">Discover</a></li>
+                  <li><a href="#" class="hover:text-[#783EAD]">About us</a></li>
+                  <li><a href="#" class="hover:text-[#783EAD]">FAQs</a></li>
+                  <li><a href="#" class="hover:text-[#783EAD]">Contact us</a></li>
+               </ul>
+               <div class="flex gap-6 items-center text-[16px]">
+                  <a href="#" class="font-bold hover:text-[#783EAD]">Log in</a>
+                  <a href="#" class="bg-[#783EAD] py-3 px-6 rounded-[10px] text-white font-semibold hover:bg-[#5a2d8c]">
+                     Sign up
+                  </a>
+               </div>
+            </div>
+         </nav>
+
+         <!-- Hero Section -->
+         <header class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center p-6 ">
+               <div class="max-w-md mb-5 md:mb-0">
+                  <h1 class="font-bold text-[32px] leading-[37.5px] text-white">
+                     Ready to Rock? Discover the Hottest Events Here — Your Calendar’s New Best Friend!
+                  </h1>
+               </div>
+               <div class="flex bg-white rounded-[20px] p-6 shadow-lg gap-4 items-center">
+                  <input type="text" placeholder="Search for an event"
+                     class="border border-gray-300 py-3 px-4 rounded-[10px] focus:outline-none focus:ring-2 focus:ring-[#783EAD]" />
+                  <select
+                     class="border border-gray-300 py-3 px-4 rounded-[10px] focus:outline-none focus:ring-2 focus:ring-[#783EAD]">
+                     <option value="">Categories</option>
+                  </select>
+                  <button class="bg-[#783EAD] py-3 px-6 rounded-[10px] text-white font-semibold hover:bg-[#5a2d8c]">
+                     Search
+                  </button>
+               </div>
+            </div>
+         </header>
+      </div>
+
+      <!-- Trending Events Section -->
+      <section class="trending-events">
+         <div class="container">
+            <div class="section-header">
+               <h2>Trending events</h2>
+               <a href="#" class="view-all">View all trending events →</a>
+            </div>
+            <div class="events-grid" id="events-grid">
+
+               <!-- <div class="event-card">
+                  <img src="images/event1.jpg" alt="Event 1" class="event-image">
+                  <div class="event-details">
+                     <h3>ISWIS Live show</h3>
+                     <p>Sun, Oct 3rd • 6pm</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur, erat at dapibus
+                        fermentum, justo neque
+                        fermentum elit, et pharetra orci risus</p>
+                     <a href="#" class="view-details">View details →</a>
+                  </div>
+               </div>
+               <div class="event-card">
+                  <img src="images/event2.jpg" alt="Event 2" class="event-image">
+                  <div class="event-details">
+                     <h3>NATIV5 Live show</h3>
+                     <p>Sun, Oct 3rd • 6pm</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur, erat at dapibus
+                        fermentum, justo neque
+                        fermentum elit, et pharetra orci risus</p>
+                     <a href="#" class="view-details">View details →</a>
+                  </div>
+               </div>
+               <div class="event-card">
+                  <img src="images/event3.jpg" alt="Event 3" class="event-image">
+                  <div class="event-details">
+                     <h3>Basketmouth Tour</h3>
+                     <p>Sun, Oct 3rd • 6pm</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur, erat at dapibus
+                        fermentum, justo neque
+                        fermentum elit, et pharetra orci risus</p>
+                     <a href="#" class="view-details">View details →</a>
+                  </div>
+               </div> -->
+
+            </div>
+         </div>
+      </section>
+   </div>
+   <script src="js/index.js" defer type="module"></script>
+</body>
+
+</html>
