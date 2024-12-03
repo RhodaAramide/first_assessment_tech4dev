@@ -5,18 +5,20 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Rendezvous</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
    <link href="./output.css" rel="stylesheet">
    <script src='./js/index.js' type='module'></script>
 </head>
 
 <body>
    <div class="">
-      <div class=" h-screen bg-cover bg-center" style="background-image: url('./images/heroImg.png');">
+      <div class="flex flex-col justify-between h-screen bg-cover bg-center pt-12"
+         style="background-image: url('./images/heroImg.png');">
          <!-- Navbar -->
          <nav class="">
             <div
                class="container mx-auto flex justify-between items-center bg-[#FFFFFF99] py-3 px-6 text-[#432361] rounded-[20px]">
-               <div class="text-[32px] leading-[37.5px] font-bold">rendezvous</div>
+               <div class="text-[32px] leading-[37.5px] font-bold items-center">rendezvous</div>
                <ul class="flex gap-6 font-bold text-[16px]">
                   <li><a href="#" class="hover:text-[#783EAD]">Discover</a></li>
                   <li><a href="#" class="hover:text-[#783EAD]">About us</a></li>
@@ -33,8 +35,8 @@
          </nav>
 
          <!-- Hero Section -->
-         <header class="container mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center p-6 ">
+         <header class="container mx-auto mb-16">
+            <div class="flex flex-col md:flex-row justify-between items-center p-6">
                <div class="max-w-md mb-5 md:mb-0">
                   <h1 class="font-bold text-[32px] leading-[37.5px] text-white">
                      Ready to Rock? Discover the Hottest Events Here — Your Calendar’s New Best Friend!
@@ -56,13 +58,14 @@
       </div>
 
       <!-- Trending Events Section -->
-      <section class="trending-events">
-         <div class="container">
-            <div class="section-header">
-               <h2>Trending events</h2>
-               <a href="#" class="view-all">View all trending events →</a>
+      <section class="">
+         <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+               <h2 class="text-[32px] leading-[37.5px] font-semibold text-black">Trending events</h2>
+               <a href="#" class="text-[16px] leading-[18.75] font-semibold text-[#432361]">View all trending events
+                  <i class="fa-solid fa-arrow-up-right"></i></a>
             </div>
-            <div class="events-grid" id="events-grid">
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-6" id="events-grid">
 
                <!-- <div class="event-card">
                   <img src="images/event1.jpg" alt="Event 1" class="event-image">
