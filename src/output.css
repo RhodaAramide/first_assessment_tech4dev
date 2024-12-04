@@ -604,18 +604,6 @@ video {
   left: 0.75rem;
 }
 
-.top-2\.5 {
-  top: 0.625rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
 .top-3\.5 {
   top: 0.875rem;
 }
@@ -637,6 +625,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-auto {
   margin-top: auto;
 }
@@ -649,8 +641,20 @@ video {
   display: grid;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
 .h-\[240px\] {
   height: 240px;
+}
+
+.h-\[480px\] {
+  height: 480px;
 }
 
 .h-auto {
@@ -661,28 +665,12 @@ video {
   height: 100vh;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-4 {
-  height: 1rem;
+.w-4 {
+  width: 1rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .max-w-60 {
@@ -745,12 +733,6 @@ video {
   gap: 84px;
 }
 
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -767,16 +749,8 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .border {
   border-width: 1px;
-}
-
-.border-\[2px\] {
-  border-width: 2px;
 }
 
 .border-l-2 {
@@ -787,32 +761,14 @@ video {
   border-style: none;
 }
 
-.border-gray {
-  --tw-border-opacity: 1;
-  border-color: rgb(224 224 224 / var(--tw-border-opacity, 1));
-}
-
 .border-\[\#E0E0E0\] {
   --tw-border-opacity: 1;
   border-color: rgb(224 224 224 / var(--tw-border-opacity, 1));
 }
 
-.border-black {
+.border-gray {
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
-}
-
-.border-\[\] {
-  border-color: ;
-}
-
-.border-l-\[\#E0E0E0\] {
-  --tw-border-opacity: 1;
-  border-left-color: rgb(224 224 224 / var(--tw-border-opacity, 1));
-}
-
-.border-l-\[\] {
-  border-left-color: ;
+  border-color: rgb(224 224 224 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#432361\] {
@@ -886,37 +842,52 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .pb-16 {
   padding-bottom: 4rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .pb-8 {
   padding-bottom: 2rem;
 }
 
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-8 {
   padding-top: 2rem;
 }
 
-.pl-10 {
-  padding-left: 2.5rem;
+.font-gilroyBold {
+  font-family: gilroy-bold, sans-serif;
 }
 
-.pr-4 {
-  padding-right: 1rem;
+.font-gilroyMedium {
+  font-family: gilroy-medium, sans-serif;
 }
 
-.font-gilroy {
-  font-family: gilroy, sans-serif;
+.font-gilroyRegular {
+  font-family: gilroy-regular, sans-serif;
+}
+
+.font-gilroySemiBold {
+  font-family: gilroy-semibold, sans-serif;
 }
 
 .text-\[16px\] {
@@ -945,21 +916,14 @@ video {
   line-height: 37.5px;
 }
 
+.text-md {
+  font-size: 24px;
+  line-height: 28.13px;
+}
+
 .text-sm {
   font-size: 14px;
   line-height: 16.41px;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .leading-\[18\.75px\] {
@@ -978,9 +942,19 @@ video {
   line-height: 37.5px;
 }
 
+.text-accent {
+  --tw-text-opacity: 1;
+  color: rgb(155 81 224 / var(--tw-text-opacity, 1));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(79 79 79 / var(--tw-text-opacity, 1));
 }
 
 .text-primary {
@@ -991,16 +965,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-dark {
-  --tw-text-opacity: 1;
-  color: rgb(79 79 79 / var(--tw-text-opacity, 1));
-}
-
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
 }
 
 .shadow-lg {
@@ -1016,291 +980,27 @@ video {
 }
 
 @font-face {
-  font-family: "gilroy";
+  font-family: "gilroy-regular";
 
   src: url("./assets/gilroy/Gilroy-Regular.ttf");
 }
 
-/* Navbar */
+@font-face {
+  font-family: "gilroy-medium";
 
-/* .navbar {
-   background-color: rgba(255, 255, 255, 0.7);
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   padding: 0.5rem 1rem;
-   width: 90%;
-   margin: 0 auto;
-   z-index: 1000;
-   margin-top: 1rem;
-   border-radius: 20px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  src: url("./assets/gilroy/Gilroy-Medium.ttf");
 }
 
-.navbar .container {
-   max-width: 1350px;
-   margin: 0 auto;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
+@font-face {
+  font-family: "gilroy-semibold";
+
+  src: url("./assets/gilroy/Gilroy-SemiBold.ttf");
 }
 
-.navbar .logo {
-   font-size: 1.5rem;
-   font-weight: bold;
-   color: purple;
-   margin-bottom: 0.5rem;
-}
+@font-face {
+  font-family: "gilroy-bold";
 
-.navbar .nav-links {
-   display: flex;
-   gap: 1.5rem;
-   flex-wrap: wrap;
-   border: 1px solid blue;
-   padding: 1rem;
-}
-
-.navbar .nav-links li a {
-   color: purple;
-   font-size: 1rem;
-}
-
-.navbar .auth-links {
-   display: flex;
-   gap: 1rem;
-}
-
-.navbar .auth-links a {
-   padding: 0.5rem 1rem;
-   border-radius: 5px;
-}
-
-.navbar .auth-links .login {
-   color: purple;
-}
-
-.navbar .auth-links .signup {
-   background-color: purple;
-   color: #fff;
-} */
-
-/* Hero Section */
-
-/* .hero {
-  background-image: url("images/hero.jpg");
-  background-size: contain;
-  background-position: center;
-  padding: 4rem 1rem;
-  text-align: center;
-  color: #fff;
-  height: 65vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-top: 0;
-}
-
-.hero-content {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-}
-
-.hero-content h1 {
-  font-size: 1.5rem;
-  width: 30%;
-  text-align: left;
-}
-
-.search-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  border-radius: 10px;
-  margin-top: 2.5rem;
-}
-
-.search-input,
-.category-select,
-.search-button {
-  padding: 0.8rem 1rem;
-  border: none;
-  border-radius: 5px;
-  flex: 1;
-  max-width: 300px;
-}
-
-.search-button {
-  background-color: purple;
-  color: #fff;
-  cursor: pointer;
-} */
-
-/* Trending Events Section */
-
-/* .trending-events .container {
-  max-width: 1350px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.section-header h2 {
-  font-size: 2rem;
-}
-
-.section-header .view-all {
-  color: gray;
-  font-size: 1rem;
-}
-
-.events-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.event-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.event-image {
-  width: 100%;
-  height: 200px;
-  object-fit: contain;
-}
-
-.event-details {
-  padding: 1rem;
-}
-
-.event-details h3 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.event-details p {
-  margin-bottom: 1rem;
-  font-size: 0.8rem;
-  color: #555;
-}
-
-.event-details .view-details {
-  font-size: 0.9rem;
-  color: gray;
-  text-decoration: underline;
-}
-
-/* Media Queries for Responsiveness */
-
-/* For tablets and smaller screens */
-
-/* @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .search-input,
-  .category-select,
-  .search-button {
-    flex: 1;
-    max-width: 100%;
-  }
-
-  .section-header {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  .navbar .nav-links {
-    flex-direction: column;
-    align-items: center;
-  }
-} */
-
-/* For mobile screens */
-
-/* @media (max-width: 480px) {
-  .navbar .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .search-bar {
-    flex-direction: column;
-  }
-
-  .event-card {
-    padding: 0.5rem;
-  }
-
-  .event-details h3 {
-    font-size: 1rem;
-  }
-
-  .event-details p {
-    font-size: 0.8rem;
-  }
-} */
-
-*/ .product-container {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f4f4f4;
-}
-
-.product-details {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  text-align: center;
-}
-
-.product-image {
-  max-width: 30%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.product-details h1 {
-  margin: 20px 0;
-  font-size: 24px;
-}
-
-.product-details p {
-  margin: 10px 0;
-  font-size: 18px;
+  src: url("./assets/gilroy/Gilroy-Bold.ttf");
 }
 
 .hover\:bg-primary:hover {

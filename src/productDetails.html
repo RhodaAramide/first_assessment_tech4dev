@@ -5,32 +5,56 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Product Details</title>
-   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="output.css">
+   <script src='./js/productDetails.js' type='module'></script>
 </head>
 
 <body>
-   <div class="product-container">
-      <div id="product-details" class="product-details"></div>
+   <div class="font-gilroyRegular">
+      <!-- Navbar -->
+      <nav class="pt-4">
+         <div class="container mx-auto flex justify-between items-center py-3 px-6 text-primary rounded-[20px]">
+            <div class="text-lg font-gilroyBold items-center">rendezvous</div>
+            <ul class="flex gap-6 font-gilroyBold text-base">
+               <li><a href="#" class="hover:text-secondary">Discover</a></li>
+               <li><a href="#" class="hover:text-secondary">About us</a></li>
+               <li><a href="#" class="hover:text-secondary">FAQs</a></li>
+               <li><a href="#" class="hover:text-secondary">Contact us</a></li>
+            </ul>
+            <div class="flex gap-6 items-center text-base">
+               <a href="#" class="font-gilroyBold hover:text-secondary">Log in</a>
+               <a href="#"
+                  class="bg-secondary py-3 px-6 rounded-[10px] text-white font-gilroySemiBold hover:bg-primary">
+                  Sign up
+               </a>
+            </div>
+         </div>
+      </nav>
+      <!-- Product Details Section -->
+      <div class="container mx-auto pt-10 pb-20">
+         <div id="product-details" class=""></div>
+      </div>
+
       <!-- Footer Section Section -->
       <footer class="bg-[#432361] text-white">
          <div class="container mx-auto flex justify-between py-12">
             <div class="flex flex-col gap-3">
-               <h1 class="font-bold text-[32px] leading-[37.5px]">rendezvous</h1>
+               <h1 class="font-gilroyBold text-[32px] leading-[37.5px]">rendezvous</h1>
                <p class="text-[16px] leading-[18.75px] max-w-xs">Your Personal Event Sherpa: Curating Awesome, One Click
                   at a
                   Time.</p>
             </div>
             <div class="flex gap-[84px]">
                <div class="flex flex-col gap-[18px]">
-                  <h3 class="font-bold text-[20px] leading-[23.44px]">Feature</h3>
-                  <div class="flex flex-col gap-3 font-semibold text-[16px] leading-[18.75px]">
+                  <h3 class="font-gilroyBold text-[20px] leading-[23.44px]">Feature</h3>
+                  <div class="flex flex-col gap-3 font-gilroySemiBold text-base">
                      <p>Events discovery</p>
                      <p>Ticketing</p>
                   </div>
                </div>
                <div class="flex flex-col gap-[18px]">
-                  <h3 class="font-bold text-[20px] leading-[23.44px]">Company</h3>
-                  <div class="flex flex-col gap-3 font-semibold text-[16px] leading-[18.75px]">
+                  <h3 class="font-gilroyBold text-[20px] leading-[23.44px]">Company</h3>
+                  <div class="flex flex-col gap-3 font-gilroySemiBold text-base">
                      <p>About us</p>
                      <p>FAQs</p>
                      <p>Careers</p>
@@ -39,8 +63,8 @@
                </div>
 
                <div class="flex flex-col gap-[18px]">
-                  <h3 class="font-bold text-[20px] leading-[23.44px]">Contact us</h3>
-                  <div class="flex flex-col gap-3 font-semibold text-[16px] leading-[18.75px]">
+                  <h3 class="font-gilroyBold text-[20px] leading-[23.44px]">Contact us</h3>
+                  <div class="flex flex-col gap-3 font-gilroySemiBold text-base">
                      <p>info@events.com</p>
                      <p>+234 701 345 6789</p>
                      <p class="max-w-60">Race Course, 8/9 Marina, Onikan, Lagos Lagos, 4aa Force Rd, Lagos Island

@@ -20,12 +20,12 @@ const createEventCard = (product) => {
   // Create the event title
   const eventTitle = document.createElement("h3");
   eventTitle.textContent = product.title;
-  eventTitle.className = "text-base font-semibold text-black mb-2";
+  eventTitle.className = "text-base font-gilroySemiBold text-black mb-2";
 
   // Create the event price
   const eventPrice = document.createElement("p");
   eventPrice.textContent = `$${product.price}`;
-  eventPrice.className = "mb-4 text-black text-sm font-medium";
+  eventPrice.className = "mb-4 text-black text-sm font-gilroyMedium";
 
   // Create the event description
   const eventDescription = document.createElement("p");
@@ -34,14 +34,14 @@ const createEventCard = (product) => {
 
   // Create the view details link
   const viewDetailsLink = document.createElement("a");
-  viewDetailsLink.href = "/index.html?productId=" + product.id;
-  viewDetailsLink.className = "text-primary text-sm font-semibold mt-auto";
+  viewDetailsLink.href = "/src/index.html?productId=" + product.id;
+  viewDetailsLink.className = "text-primary text-sm font-gilroySemiBold mt-auto";
   viewDetailsLink.textContent = "View details";
   viewDetailsLink.dataset.productId = product.id;
   // Add an event listener to the view details link
   viewDetailsLink.addEventListener("click", (event) => {
     event.preventDefault();
-    window.location.href = "/productDetails.html?productId=" + product.id;
+    window.location.href = "/src/productDetails.html?productId=" + product.id;
   });
 
   // Append elements to the event details div
