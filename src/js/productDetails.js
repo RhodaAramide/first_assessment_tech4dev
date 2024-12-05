@@ -40,7 +40,7 @@ const displayProductDetails = (product) => {
               </div>
               <div class="w-full md:w-[40%] lg:w-[30%] md:pt-14">
                 <div class="flex flex-col">
-                  <p class="font-semibold py-3">Contact Organizers</p>
+                  <p class="text-base font-gilroyBold py-3">Contact Organizers</p>
                   <div class="flex gap-6">
                     <div class="bg-secondary p-1 rounded-2xl text-white">
                       <i class="bi bi-envelope-fill"></i>
@@ -55,7 +55,7 @@ const displayProductDetails = (product) => {
                 </div>
                 <div class="pt-6 w-full h-full max-h-[500px] text-left sm:min-h-[400px] md:min-h-[350px]">
                   <p class="text-base font-gilroyBold py-4 ">Directions</p>
-                  <div class="relative w-full h-[80%] ">
+                  <div class="relative w-full h-[80%] mt-2">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.615574213267!2d3.3988596743937305!3d6.443381993547897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8bd384cdf87b%3A0xc83383bffdab3596!2sMuson%20Centre!5e0!3m2!1sen!2sng!4v1733253941423!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="absolute top-0 left-0 w-full h-[100%]"></iframe>
                   </div>
                 </div>
