@@ -4,7 +4,7 @@ const createEventCard = (product) => {
   // Create the event card div
   const eventCard = document.createElement("div");
   eventCard.className =
-    "bg-white border border-gray rounded-lg overflow-hidden shadow-md rounded-[10px] flex flex-col justify-between";
+    "bg-white border border-gray rounded-lg overflow-hidden shadow-md rounded-[10px] flex flex-col md:justify-between";
 
   // Create the image element
   const eventImage = document.createElement("img");
