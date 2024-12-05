@@ -10,8 +10,8 @@ const createEventCard = (product) => {
   const eventImage = document.createElement("img");
   eventImage.src = product.image;
   eventImage.alt = product.title;
-  eventImage.className = "w-full h-[240px] object-contain";
-  eventImage.style.backgroundColor = "#f0f0f0";
+  eventImage.className = "w-full h-[240px] object-contain shadow-md";
+  // eventImage.style.backgroundColor = "#f0f0f0";
 
   // Create the event details div
   const eventDetails = document.createElement("div");
@@ -35,9 +35,35 @@ const createEventCard = (product) => {
   // Create the view details link
   const viewDetailsLink = document.createElement("a");
   viewDetailsLink.href = "/src/index.html?productId=" + product.id;
-  viewDetailsLink.className = "text-primary text-sm font-gilroySemiBold mt-auto";
+  viewDetailsLink.className =
+    "text-primary text-sm font-gilroySemiBold mt-auto view-details-link flex items-center gap-1";
   viewDetailsLink.textContent = "View details";
   viewDetailsLink.dataset.productId = product.id;
+
+  // Create the SVG element
+  const svgIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svgIcon.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  svgIcon.setAttribute("width", "16");
+  svgIcon.setAttribute("height", "16");
+  svgIcon.setAttribute("fill", "currentColor");
+  svgIcon.setAttribute("class", "bi bi-arrow-up-right");
+  svgIcon.setAttribute("viewBox", "0 0 16 16");
+
+  const svgPath = document.createElementNS(
+    "http://www.w3.org/2000/svg",
+    "path"
+  );
+  svgPath.setAttribute("fill-rule", "evenodd");
+  svgPath.setAttribute(
+    "d",
+    "M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"
+  );
+
+  svgIcon.appendChild(svgPath);
+
+  // Append the SVG icon to the view details link
+  viewDetailsLink.appendChild(svgIcon);
+
   // Add an event listener to the view details link
   viewDetailsLink.addEventListener("click", (event) => {
     event.preventDefault();
