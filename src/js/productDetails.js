@@ -6,7 +6,7 @@ const displayProductDetails = (product) => {
 
   productDetailsDiv.innerHTML = `
         <div class="pb-2 font-gilroyRegular">          
-          <img src=${product.image} alt=${product.title} class="w-full h-96 object-contain shadow-lg rounded-[10px]"/>
+          <img src=${product.image} alt=${product.title} class="w-full h-96 object-contain shadow-lg rounded-[10px] md:px-0 px-4"/>
           
             <div class="flex flex-col md:flex-row md:justify-between gap-[20px] py-8">
               <div class="p-[20px] w-full md:w-[60%] lg:w-[70%]">
